@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow|Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Project tracking intro component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+          <img class="hamburger" id="hamburger" src="images/icon-hamburger.svg" alt="hamburger" onclick="changing()">
+      </span>
+      <a href="#" class="logo">
+        <img src="images/logo.svg" alt="logo">
+      </a>
+      <ul class="main-nav" id="js-menu">
+          <li>
+              <a href="#" class="nav-links">PRODUCT</a>
+          </li>
+          <li>
+              <a href="#" class="nav-links">FEATURES</a>
+          </li>
+          <li>
+              <a href="#" class="nav-links">PRICING</a>
+          </li>
+          <hr id="hr">
+          <li class="login">
+              <a href="#" class="nav-links" id="login">LOGIN</a>
+          </li>
+      </ul>
+  </nav>
+  <div class="content_container">
+    <div class="left_main_container">
+      <div class="heading">
+        <h6 class="new">NEW</h6>
+        <p>Monograph Dashboard</p>
+        </div>
+        <div>
+          <h1>Powerful insights <span>into your team</span></h1>
+        </div>
+        <div class="description">
+          <p>Project planning and time tracking <span>for agile teams</span></p>
+        </div>
+       
+        <div class="footer">
+          <button>Schedule a demo</button>
+           <p>to see a preview</p>
+        </div>
+    </div>
+    <div class="right_main_container">
+      <div class="blue_background"></div>
+      <img id="devices" src="images/illustration-devices.svg" alt="devices">
+    </div>
+    </div>
+
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+  
+  <script src="hamburger.js"></script>
+</body>
+</html>
