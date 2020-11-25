@@ -7,8 +7,9 @@
   body {
     font-family: "Barlow", sans-serif;
     font-weight: 400;
-    
-   
+   overflow-x: hidden;
+   max-width: 100%; 
+  
   }
   
   .container{
@@ -45,11 +46,6 @@
     font-weight: 600;
   }
   
-  /* a:hover{
-    color:hsl(230, 29%, 20%);
-    text-decoration: hsl(230, 29%, 20%);
-  } */
-
   #login{
       color:hsl(230, 11%, 40%)
   }
@@ -97,11 +93,12 @@
    }
   
    .left_main_container{
-      display: flex;
+     padding-left: 10px;
+      /* display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width:100vw;
+      width:100vw; */
       margin-top: 100px;
    }
 
@@ -112,12 +109,8 @@
    .right_main_container img{
        /* width:100vw; */
        max-width: 150%;
-    margin-top: 30px;
+    margin-top: 190px;
    }
-
-   /* .change_margin{
-    margin-top: 300px;    
-   } */
 
    .left_main_container .heading{
        display: flex;
@@ -133,7 +126,7 @@
        border-radius: 10px;
        letter-spacing: 1px;
        margin-right: 10px;
-       margin-left: -50px;
+       /* margin-left: -50px; */
    }
 
    .heading p{
@@ -145,29 +138,20 @@
        /* font-family: 'Barlow Condensed'; */
    }
 
-   .left_main_container h1{
-      text-transform: uppercase;
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-
-    h1 span{
-        display: block;
-    }
+   .main_heading{
+    margin-top: 30px;
+    text-transform: uppercase;
+      
+   }
 
     .description{
-        margin-left: -100px;
+      margin-top: 30px;
         color:hsl(230, 11%, 40%)
     }
     
-    p span{
-        display: block;
-    }
-
     .footer{
         display: flex;
         margin-top: 50px;
-        justify-content: flex-start;
         align-items: center;
     }
 
@@ -197,6 +181,12 @@
         height:45%;
         border-bottom-left-radius: 100px;
     }
+
+    .footer button:hover{
+      cursor: pointer;
+      opacity:0.6;
+    }
+
   @media screen and (min-width: 768px) {
     .navbar {
       display: flex;
@@ -253,6 +243,7 @@
     }
 
     .left_main_container{
+      padding-left: 185px;
         width:50vw;
         margin-top: unset;
     }
@@ -267,5 +258,31 @@
     height:50%;
    }
   }
+
+  @media only screen and (max-width:345px){
+
+    .heading{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .heading .new{
+      margin: unset;
+      margin-bottom: 10px;
+    }
+    .description{
+      margin-left: unset;
+    }
+
+    .footer{
+      flex-direction: column;
+    }
+
+    .footer p{
+      margin-top: 20px;
+    }
+  }
+
+
   
   
